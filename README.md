@@ -5,7 +5,7 @@ Install [GoCD YAML configuration plugin](https://github.com/tomzo/gocd-yaml-conf
 ```xml
 <config-repos>
   <config-repo plugin="yaml.config.plugin">
-    <git url="https://github.com/tomzo/gocd-yaml-config-example.git" />
+    <git url="https://github.com/myspotontheweb/gocd-yaml-config-example.git" />
   </config-repo>
 </config-repos>
 ```
