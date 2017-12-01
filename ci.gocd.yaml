@@ -3,9 +3,24 @@ environments:
     environment_variables:
       EXAMPLE_DEPLOYMENT: testing
     pipelines:
-      - yaml-example
+      - yaml-example1
+      - yaml-example2
 pipelines:
-  "yaml-example": 
+  "yaml-example1": 
+    group: yaml-example
+    materials:
+      mygit: 
+        git: https://github.com/myspotontheweb/go-demo.git
+    stages:
+      - build: # name of stage
+          jobs:
+            build: # name of the job
+              tasks:
+               - exec: # indicates type of task
+                   command: echo 
+                   arguments:
+                     - hello world
+  "yaml-example2": 
     group: yaml-example
     materials:
       mygit: 
