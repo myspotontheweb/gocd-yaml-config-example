@@ -3,11 +3,10 @@ environments:
     environment_variables:
       EXAMPLE_DEPLOYMENT: testing
     pipelines:
-      - yaml-demo
-
+      - yaml-example
 pipelines:
-  yamlpipe1:
-    group: simple
+  "yaml-example": 
+    group: yaml-example
     materials:
       mygit: 
         git: https://github.com/myspotontheweb/go-demo.git
